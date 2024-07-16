@@ -57,4 +57,15 @@ codice_fiscale      VARCHAR(16)     NOT NULL    UNIQUE
 matricola           VARCHAR(7)      NOT NULL    UNIQUE
 email               VARCHAR(50)     NOT NULL    UNIQUE
 telefono            SMALLINT        NOT NULL    UNIQUE
+
+
+
+name_tabella: esame
+
+id                  INT             UNSIGNED    AUTO_INCREMENT      PRIMARY_KEY
+id_corso  FOREIGN_KEY
+nome                VARCHAR(28)     NOT NULL
+data                DATE            NOT NULL
+orario              TIME            NOT NULL
+programma           TEXT            NOT NULL
  
