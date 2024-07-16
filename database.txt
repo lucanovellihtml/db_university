@@ -20,3 +20,14 @@ durata              SMALLINT        NOT NULL
 disponibilità       BOOLEAN         NOT NULL    DEFAULT(true)
 obiettivi_formativi TEXT            NOT NULL
 anno                YEAR            NOT NULL
+
+
+
+name_tabella: corso
+
+id                  INT             UNSIGNED    AUTO_INCREMENT      PRIMARY_KEY
+id_corso_di_laurea  FOREIGN_KEY
+nome                VARCHAR(28)     NOT NULL
+ore_durata          SMALLINT        NOT NULL
+argomento           TEXT            NOT NULL
+presenza            BOOLEAN         NOT NULL    DEFAULT(true)
