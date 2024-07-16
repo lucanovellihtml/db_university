@@ -31,3 +31,15 @@ nome                VARCHAR(28)     NOT NULL
 ore_durata          SMALLINT        NOT NULL
 argomento           TEXT            NOT NULL
 presenza            BOOLEAN         NOT NULL    DEFAULT(true)
+
+
+
+name_tabella: insegnante
+
+id                  INT             UNSIGNED    AUTO_INCREMENT      PRIMARY_KEY
+id_corso            FOREIGN_KEY
+nome                VARCHAR(28)     NOT NULL
+cognome             VARCHAR(28)     NOT NULL
+email               VARCHAR(50)     NOT NULL    UNIQUE
+telefono            SMALLINT        NOT NULL    UNIQUE
+ruolo               TEXT            
