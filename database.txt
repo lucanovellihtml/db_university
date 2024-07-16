@@ -6,3 +6,17 @@ tipologia           TEXT            NOT NULL
 luogo               VARCHAR(28)     NOT NULL
 presidente          VARCHAR(28)     NOT NULL
 telefono            SMALLINT        NOT NULL    UNIQUE
+
+
+
+name_tabella: corso_di_laurea
+
+id                  INT             UNSIGNED    AUTO_INCREMENT      PRIMARY_KEY
+id_dipartimento     FOREIGN_KEY
+nome                VARCHAR(28)     NOT NULL
+tipologia           TEXT            NOT NULL
+facoltà             TEXT            NOT NULL
+durata              SMALLINT        NOT NULL
+disponibilità       BOOLEAN         NOT NULL    DEFAULT(true)
+obiettivi_formativi TEXT            NOT NULL
+anno                YEAR            NOT NULL
