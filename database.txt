@@ -1,0 +1,8 @@
+name_tabella: dipartimento
+
+id                  INT             UNSIGNED    AUTO_INCREMENT      PRIMARY_KEY
+nome                VARCHAR(28)     NOT NULL
+tipologia           TEXT            NOT NULL
+luogo               VARCHAR(28)     NOT NULL
+presidente          VARCHAR(20)     NOT NULL
+telefono            SMALLINT        NOT NULL    UNIQUE
