@@ -63,9 +63,18 @@ telefono            SMALLINT        NOT NULL    UNIQUE
 name_tabella: esame
 
 id                  INT             UNSIGNED    AUTO_INCREMENT      PRIMARY_KEY
-id_corso  FOREIGN_KEY
+id_corso            FOREIGN_KEY
 nome                VARCHAR(28)     NOT NULL
 data                DATE            NOT NULL
 orario              TIME            NOT NULL
 programma           TEXT            NOT NULL
+
+
+
+name_tabella_relazione: esamistudenti
+tabella relazione many-to-many tra studente e esame
+                 
+id_studente         FOREIGN_KEY
+id_esame            FOREIGN_KEY
+voto                SMALLINT        NOT NULL
  
